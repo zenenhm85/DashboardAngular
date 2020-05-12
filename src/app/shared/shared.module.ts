@@ -15,6 +15,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { RouterModule } from '@angular/router';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { AreaComponent } from './widgets/area/area.component';
+import { CardComponent } from './widgets/card/card.component';
+import { PieComponent } from './widgets/pie/pie.component';
+
 
 
 @NgModule({
@@ -22,7 +25,9 @@ import { AreaComponent } from './widgets/area/area.component';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    AreaComponent
+    AreaComponent,
+    CardComponent,
+    PieComponent
   ],
   imports: [
     CommonModule,
@@ -41,6 +46,9 @@ import { AreaComponent } from './widgets/area/area.component';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
+    AreaComponent,
+    CardComponent,
+    PieComponent
     
   ]
 })
