@@ -11,8 +11,10 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card'; 
 import {MatPaginatorModule} from '@angular/material/paginator'; 
 import {MatTableModule} from '@angular/material/table';  
+import {MatFormFieldModule} from '@angular/material/form-field'; 
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { DashboardService } from 'src/app/modules/dashboard.service';
 
 
 @NgModule({
@@ -31,7 +33,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FlexLayoutModule,
     MatCardModule,
     MatPaginatorModule,
-    MatTableModule
+    MatTableModule,
+    MatFormFieldModule
+  ],
+  providers:[
+    DashboardService
   ]
 })
 export class DefaultModule { }
